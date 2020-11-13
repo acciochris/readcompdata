@@ -1,0 +1,28 @@
+{
+  "datasetId": 889099,
+  "datasetSlug": "rdcp-wordchooser-dataset",
+  "ownerUser": "acciochris",
+  "usabilityRating": 0.125,
+  "totalViews": 2,
+  "totalVotes": 0,
+  "totalDownloads": 2,
+  "title": "Rdcp Wordchooser Dataset",
+  "subtitle": "",
+  "description": "",
+  "isPrivate": true,
+  "licenses": [
+    {
+      "name": "CC0-1.0"
+    }
+  ],
+  "keywords": [],
+  "collaborators": [],
+  "data": [
+    {
+      "description": null,
+      "name": "engdaily.txt",
+      "totalBytes": 203864,
+      "columns": []
+    }
+  ]
+}

@@ -2,9 +2,10 @@
 
 from requests_html import HTMLSession
 import re
+import argparse
 
 
-def get(
+def engdaily(
     psgloc="cloze_passages", base_url="http://www.englishdaily626.com/{}.php?{:03d}"
 ):
     texts = []
@@ -21,4 +22,19 @@ def get(
             break
         else:
             texts.append(text)
-    return texts
+
+    with open("engdaily.txt", "w") as f:
+        f.writelines(texts)
+
+
+def main():
+    parser = argparse.ArgumentParser(description="Download data for the wordchooser.")
+    parser.add_argument(
+        "-s", "--source", nargs="+", help="source(s) to get data from", required=True
+    )
+    opts = parser.parse_args()
+    for source in opts.source:
+        globals()[source]()
+
+
+main()
