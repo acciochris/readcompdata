@@ -1,6 +1,6 @@
 # Readcompdata - data for the Readcomp project
 
-> Note
+> Note:
 > This project is currently inactive.
 
 This is the main repository for the data used by [readcomp](https://github.com/acciochris/readcomp).
